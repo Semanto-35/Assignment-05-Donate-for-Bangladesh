@@ -29,13 +29,13 @@ document.getElementById('history-button').addEventListener('click', function () 
 
 // Event listeners for donate now buttons
 document.getElementById('donate-button-Noakhali').addEventListener('click', function () {
-    handleDonation('card-1', 'donation-input-noakhali', 'current-donation-1', 'heading-text-1', 'Noakhali');
+    handleDonation('donation-input-noakhali', 'current-donation-1', 'heading-text-1', 'Noakhali');
 });
 
 document.getElementById('donate-button-feni').addEventListener('click', function () {
-    handleDonation('card-2', 'donation-input-feni', 'current-donation-2', 'heading-text-2', 'feni');
+    handleDonation('donation-input-feni', 'current-donation-2', 'heading-text-2', 'feni');
 });
 
 document.getElementById('donate-button-quota').addEventListener('click', function () {
-    handleDonation('card-3', 'donation-input-quota', 'current-donation-3', 'heading-text-3', 'quota');
+    handleDonation('donation-input-quota', 'current-donation-3', 'heading-text-3', 'quota');
 });

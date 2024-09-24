@@ -12,7 +12,7 @@ function getTheElementById(id) {
 }
 
 // Function to handle donation 
-function handleDonation(cardId, inputId, currentDonationId, headingTextId, modalId) {
+function handleDonation(inputId, currentDonationId, headingTextId, modalId) {
     const donationAmount = getInputFieldValueById(inputId);
     const currentDonation = getInnerTextValueById(currentDonationId);
     const myBalance = getInnerTextValueById('my-balance');
@@ -53,5 +53,5 @@ function handleDonation(cardId, inputId, currentDonationId, headingTextId, modal
     historySection.insertBefore(div, historySection.firstChild);
 
     // Show success modal
-    document.getElementById(modalId).showModal();
+    getTheElementById(modalId).showModal();
 }
