@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +30,7 @@
 </head>
 
 <body class="font-Lexend">
-    <section class="md:container md:mx-auto mx-4">
+    <header class="md:container mx-auto">
         <!-- navbar -->
         <div class="navbar bg-[#F9F7F3]">
             <div class="navbar-start">
@@ -41,15 +43,20 @@
                 </a>
             </div>
             <div class="navbar-end">
-                <a class="flex gap-2 text-xl items-center">
+                <a class="flex gap-2 md:text-xl text-lg items-center">
                     <img src="./assets/coin.png" alt="">
                     <span>5500</span>BDT
                 </a>
             </div>
         </div>
+    </header>
+    <main class="md:container md:mx-auto mx-4">
         <!-- FAQs -->
         <div class="space-y-6 mt-10">
-            <h1 class="text-4xl font-bold">Important FAQs</h1>
+            <h1 class="text-4xl font-bold">
+                Important FAQs
+                <i class="fa-regular fa-circle-question fa-bounce"></i>
+            </h1>
             <div class="join join-vertical w-full">
                 <div class="collapse collapse-arrow join-item border-base-300 border">
                     <input type="radio" name="my-accordion-4" checked="checked" />
@@ -111,7 +118,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
+    <footer class="md:container mx-auto h-20 bg-[#fff9ec] mt-10"></footer>
     <script src="./js/blog.js"></script>
 </body>
 

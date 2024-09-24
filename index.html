@@ -28,7 +28,7 @@
 </head>
 
 <body class="font-Lexend">
-    <header class="md:container md:mx-auto mx-4 sticky top-0 z-10  backdrop-blur-lg">
+    <header class="md:container mx-auto sticky top-0 z-10  backdrop-blur-lg">
         <!-- navbar -->
         <div class="navbar bg-[#fff9ec]/50">
             <!-- blog button -->
@@ -43,7 +43,7 @@
             </div>
             <div class="navbar-end">
                 <!-- my balance -->
-                <a class="flex gap-2 text-xl items-center">
+                <a class="flex md:gap-2 md:text-xl gap-1 text-lg items-center">
                     <img src="./assets/coin.png" alt="">
                     <span id="my-balance">6000</span>BDT
                 </a>
@@ -233,8 +233,9 @@
             </div>
         </section>
         <!-- Empty history section -->
-        <section id="history-section" class="hidden md:container md:mx-auto mx-4 mt-8"></section>
+        <section id="history-section" class="hidden min-h-screen md:container md:mx-auto mx-4 mt-8"></section>
     </main>
+    <footer class="md:container mx-auto h-20 bg-[#fff9ec] mt-8"></footer>
     <script src="./js/utilities.js"></script>
     <script src="./js/index.js"></script>
 </body>
