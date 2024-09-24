@@ -27,9 +27,38 @@
     </script>
 </head>
 
-<body>
-    <header></header>
+<body class="font-Lexend">
+    <header class="md:container md:mx-auto mx-4 sticky top-0 z-10  backdrop-blur-lg">
+        <!-- navbar -->
+        <div class="navbar bg-[#fff9ec]/50">
+            <!-- blog button -->
+            <div class="navbar-start">
+                <a id="blog-button" class="btn text-xl bg-[#B4F461]">Blog</a>
+            </div>
+            <div class="navbar-center">
+                <a class="flex  gap-4 items-center font-semibold text-xl">
+                    <img class="w-12 h-12" src="./assets/logo.png" alt="">
+                    <span class="hidden md:flex">Donate Bangladesh</span>
+                </a>
+            </div>
+            <div class="navbar-end">
+                <!-- my balance -->
+                <a class="flex gap-2 text-xl items-center">
+                    <img src="./assets/coin.png" alt="">
+                    <span id="my-balance">6000</span>BDT
+                </a>
+            </div>
+        </div>
+        <div class="flex pb-6 pt-10 items-center justify-center gap-6">
+            <!-- Donation buttton -->
+            <button id="donation-button" class="btn text-xl font-semibold bg-[#B4F461]">Donation</button>
+            <!-- History button -->
+            <button id="history-button" class="btn text-xl font-normal">History</button>
+        </div>
+        <hr>
+    </header>
     <main></main>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
